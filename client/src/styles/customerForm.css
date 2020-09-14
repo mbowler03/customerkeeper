@@ -1,0 +1,52 @@
+.contact-form{
+    height: 100%;
+    width: 500px;
+    min-width: 20%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 20px;
+    padding-bottom: 5px;
+    margin: 20px;
+}
+
+.contact-form h3{
+    color: rgb(44, 44, 53);
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-check input[type="radio"]:checked+label{
+    color: #003e8f;
+    font-size: 17px;
+}
+
+.contact-form #btn{
+    color: rgba(255, 255, 255, 0.788);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    width: 90%
+}
+.contact-form #btn:hover{
+    background-color: rgba(8, 8, 24, 0.747);
+    color:white
+}
+.contact-form #btn:active{
+    background-color: rgba(42, 56, 5, 0.863);
+    color:white
+}
+
+.contact-form #btn-cancel{
+    color: rgba(255, 255, 255, 0.788);
+    background-color: rgb(133, 45, 29);
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    width: 90%
+}
+.contact-form #btn-cancel:hover{
+    background-color: rgba(190, 58, 6, 0.863);
+    color:white
+}
+
+
+

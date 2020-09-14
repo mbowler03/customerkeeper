@@ -1,0 +1,12 @@
+.loader{
+    margin: 20px;
+    display: flex;
+    max-width: 700px;
+    min-width: 40%;
+    justify-content: center;
+}
+
+.preloader{
+    align-self: center;
+    max-height: 5%;
+}

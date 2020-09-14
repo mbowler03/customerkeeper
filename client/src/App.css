@@ -1,0 +1,62 @@
+body {
+    padding-bottom: 50px;
+  }
+  .page-footer {
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0em;
+  }
+  .footer-brand {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .navbar {
+    background-color: black;
+    color: white;
+  }
+  .jumbotron {
+    background-color: black;
+    color: white;
+  }
+  .newcustomerpage {
+    background-color: blue;
+    color: white;
+  }
+  .btn {
+    color: white;
+  }
+  /* Cards */
+  .card {
+    padding: 1em;
+    border: #ccc 1px dotted;
+    margin: 1rem auto;
+    max-width: 500px;
+  }
+  /* List */
+  .list {
+    margin: 0.5rem 0;
+    list-style: none;
+  }
+  
+  .list li {
+    padding-bottom: 0.3rem;
+  }
+  .homepage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    overflow: hidden;
+    padding: 0 2rem;
+  }
+  .page-footer {
+  margin-top: 10rem
+  }

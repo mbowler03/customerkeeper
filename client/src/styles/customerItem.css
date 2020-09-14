@@ -1,0 +1,44 @@
+.contact-item{
+    background-color: rgba(179, 168, 153, 0.13);
+    border: 1px solid rgba(8, 1, 1, 0.082);
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    min-width: 40%;
+
+}
+
+.contact-info h4{
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(7, 7, 148);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about span{
+    color: rgb(11, 133, 22);
+    margin-left: 5px;
+}
+
+.contact-info .btn{
+    margin: 5px 5px 0px 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+}
+
+.contact-info{
+    position: relative;
+}
+.contact-item span{
+    max-height: 9%;
+}
+.info{
+    margin-bottom: 5px    
+}
+.info span{
+    margin-left: 5px
+}
