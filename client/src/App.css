@@ -19,6 +19,9 @@ body {
     background-color: black;
     color: white;
   }
+  .nav-link{
+    color: white;
+  }
   .jumbotron {
     background-color: black;
     color: white;
@@ -50,6 +53,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    
   }
   .form-container {
     max-width: 500px;

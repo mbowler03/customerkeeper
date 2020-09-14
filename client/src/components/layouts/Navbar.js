@@ -6,7 +6,7 @@ import { faIdCard } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md navbar bg">
       <a className="navbar-brand">
         <FontAwesomeIcon icon={faIdCard} color="white" size="lg" />
       </a>

@@ -1,4 +1,4 @@
-.contact-form{
+.customer-form{
     height: 100%;
     width: 500px;
     min-width: 20%;
@@ -8,7 +8,7 @@
     margin: 20px;
 }
 
-.contact-form h3{
+.customer-form h3{
     color: rgb(44, 44, 53);
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
@@ -19,7 +19,7 @@
     font-size: 17px;
 }
 
-.contact-form #btn{
+.customer-form #btn{
     color: rgba(255, 255, 255, 0.788);
     margin-top: 20px;
     margin-bottom: 0px;
@@ -30,12 +30,12 @@
     background-color: rgba(8, 8, 24, 0.747);
     color:white
 }
-.contact-form #btn:active{
+.customer-form #btn:active{
     background-color: rgba(42, 56, 5, 0.863);
     color:white
 }
 
-.contact-form #btn-cancel{
+.customer-form #btn-cancel{
     color: rgba(255, 255, 255, 0.788);
     background-color: rgb(133, 45, 29);
     margin-top: 5px;
@@ -43,7 +43,7 @@
     margin-left: 5%;
     width: 90%
 }
-.contact-form #btn-cancel:hover{
+.customer-form #btn-cancel:hover{
     background-color: rgba(190, 58, 6, 0.863);
     color:white
 }

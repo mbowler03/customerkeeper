@@ -9,5 +9,4 @@ const PreLoader = () => {
         </div>
     )
 }
-
 export default PreLoader

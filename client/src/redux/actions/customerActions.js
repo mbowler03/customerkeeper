@@ -1,14 +1,11 @@
 import {
   GET_CUSTOMERS,
-  SET_LOADING,
   ADD_CUSTOMER,
-  SET_LOADINGFORM,
   DELETE_CUSTOMER,
   SET_CUSTOMER,
   CLEAR_CURRENT,
   FILTER_CUSTOMERS,
   CLEAR_FILTER,
- 
 } from "../types.js";
 import axios from "axios";
 
@@ -16,29 +13,15 @@ const instance = axios.create({
   baseURL: "http://localhost:8080/",
 });
 export const getCustomers = () => async (dispatch) => {
-  try {
-    //loading true
-    dispatch({
-      type: SET_LOADING,
-    });
-
-    const res = await instance.get("/customers");
-    console.log("this is a get", res.data);
-    dispatch({
-      type: GET_CUSTOMERS,
-      payload: res.data,
-     
-    });
-  } catch (error) {
-
-  }
+  const res = await instance.get("/customers");
+  dispatch({
+    type: GET_CUSTOMERS,
+    payload: res.data,
+  });
 };
 
 export const postCustomer = (customer) => async (dispatch) => {
   try {
-    dispatch({
-      type: SET_LOADINGFORM,
-    });
     const res = await instance.post("/customers", customer);
     dispatch({
       type: ADD_CUSTOMER,
@@ -46,21 +29,21 @@ export const postCustomer = (customer) => async (dispatch) => {
     });
   } catch (error) {
     console.log(error);
+  } finally {
+    const res = await instance.get("/customers");
+    dispatch({
+      type: GET_CUSTOMERS,
+      payload: res.data,
+    });
   }
 };
 
-
-
 export const deleteCustomer = (id) => async (dispatch) => {
-  try {
-    await instance.delete(`/customers/${id}`);
-    dispatch({
-      type: DELETE_CUSTOMER,
-      payload: id,
-    });
-  } catch (error) {
-    console.log(error);
-  }
+  await instance.delete(`/customers/${id}`);
+  dispatch({
+    type: DELETE_CUSTOMER,
+    payload: id,
+  });
 };
 
 export const setCustomer = (customer) => (dispatch) => {

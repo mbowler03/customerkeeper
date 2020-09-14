@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Pulse from 'react-reveal/Pulse'
 import {faEnvelope, faPhoneSquareAlt} from '@fortawesome/free-solid-svg-icons'
 import '../../styles/customerItem.css'
+import { getCustomers } from '../../redux/actions/customerActions'
 
 const CustomerItem = ({_id, first_name, last_name, address, address2, city, state, zip, email, phone, deleteCustomer, setCustomer}) => {
 
@@ -23,6 +24,7 @@ const CustomerItem = ({_id, first_name, last_name, address, address2, city, stat
             phone
         }
         setCustomer(customer)
+        getCustomers();
     }
     return (
         <Pulse>
