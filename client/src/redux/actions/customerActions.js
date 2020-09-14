@@ -13,7 +13,7 @@ import {
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "http://localhost:8080/",
 });
 export const getCustomers = () => async (dispatch) => {
   try {
@@ -23,9 +23,11 @@ export const getCustomers = () => async (dispatch) => {
     });
 
     const res = await instance.get("/customers");
+    console.log("this is a get", res.data);
     dispatch({
       type: GET_CUSTOMERS,
       payload: res.data,
+     
     });
   } catch (error) {
 

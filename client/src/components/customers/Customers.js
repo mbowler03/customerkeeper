@@ -33,7 +33,7 @@ const Customers = ({state: {customers, loading, filtered}, getCustomers, deleteC
             />
             {filtered !== null ? filtered.map(data => (
                 <CustomerItem key={data.id}
-                    _id={data.id}
+                    id={data.id}
                     first_name={data.first_name}
                     last_name={data.last_name}
                     address={data.address}

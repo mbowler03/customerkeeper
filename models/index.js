@@ -1,17 +1,15 @@
-const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-
-const customerSchema = new Schema({
-  first_name: { type: String, required: true },
-  last_name: { type: String, required: true },
-  address: { type: String, required: true },
-  address2: { type: String },
-  city: { type: String, required: true },
-  state: { type: String, required: true },
-  zip: { type: String, required: true },
-  phone: { type: String, required: true },
-  email: { type: String, required: true },
+  
+const config = require('../config/config');
+const dbConfig = config.db;
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  operatorsAliases: 0,
 });
+const db = {};
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+db.customers = require('./customer.model.js')(sequelize, Sequelize);
 
-const Customer = mongoose.model("Customer", customerSchema);
-module.exports = Customer;
+module.exports = db;
