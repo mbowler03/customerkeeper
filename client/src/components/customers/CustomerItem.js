@@ -24,20 +24,18 @@ const CustomerItem = ({_id, first_name, last_name, address, address2, city, stat
             phone
         }
         setCustomer(customer)
-        getCustomers();
+        //getCustomers()
     }
     return (
         <Pulse>
         <div className="card bg-white text-center">
         <div className="customer-item">
             <div className="customer-info">
-                <h4>{first_name}</h4>
-                <h4>{last_name}</h4>
-                <h4>{address}</h4>
-                <h4>{address2}</h4>
-                <h4>{city}</h4>
-                <h4>{state}</h4>
-                <h4>{zip}</h4>
+            <h4>{first_name} {last_name} </h4>
+            <br />
+            <h4>{address} {address2}</h4>
+            <br />
+            <h4>{city} { state} {zip}</h4>
                 <div className="info">
                     <FontAwesomeIcon icon={faEnvelope}/>
                     <span>{email}</span>

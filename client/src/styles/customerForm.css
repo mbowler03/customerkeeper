@@ -14,10 +14,6 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.form-check input[type="radio"]:checked+label{
-    color: #003e8f;
-    font-size: 17px;
-}
 
 .customer-form #btn{
     color: rgba(255, 255, 255, 0.788);
